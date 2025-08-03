@@ -1,24 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_combn.c                                   :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ibuil-lo <ibuil-lo@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/02 18:08:06 by ibuil-lo          #+#    #+#             */
-/*   Updated: 2025/08/03 21:36:07 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/03 21:44:11 by ibuil-lo          #+#    #+#             */
+/*   Updated: 2025/08/03 21:47:25 by ibuil-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-void	ft_putchar(void)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	write(1, &c, 1);
-}
-
-
-void	ft_print_combn(int n)
-{
-	
+	*div = a / b;
+	*mod = a % b;
 }

@@ -1,24 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_combn.c                                   :+:      :+:    :+:   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ibuil-lo <ibuil-lo@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/02 18:08:06 by ibuil-lo          #+#    #+#             */
-/*   Updated: 2025/08/03 21:36:07 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/03 21:41:12 by ibuil-lo          #+#    #+#             */
+/*   Updated: 2025/08/03 21:43:22 by ibuil-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-void	ft_putchar(void)
+void	ft_ultimate_ft(int *********nbr)
 {
-	write(1, &c, 1);
-}
-
-
-void	ft_print_combn(int n)
-{
-	
+	*********nbr = 42;
 }
