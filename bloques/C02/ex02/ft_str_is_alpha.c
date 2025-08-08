@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_combn.c                                   :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ibuil-lo <ibuil-lo@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/02 18:08:06 by ibuil-lo          #+#    #+#             */
-/*   Updated: 2025/08/08 21:51:40 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/08 19:30:09 by ibuil-lo          #+#    #+#             */
+/*   Updated: 2025/08/08 20:28:40 by ibuil-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(void)
+int	ft_str_is_alpha(char *str)
 {
-	write(1, &c, 1);
-}
+	int	i;
 
-
-void	ft_print_combn(int n)
-{
-	
+	i = 0;
+	while (str[i])
+	{
+		if ((str[i] < 'a' || str[i] > 'z') && (str[i] < 'A' || str[i] > 'B'))
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (1);
 }
