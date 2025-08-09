@@ -1,0 +1,2 @@
+echo "git log -n5 --format='%H'" > git_commit.sh
+chmod ugo+x git_commit.sh

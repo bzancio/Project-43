@@ -1,0 +1,2 @@
+echo "find . -type f \( -name '*~' -o -name '#*#' \) -print -delete" > clean
+chmod ugo+x clean
