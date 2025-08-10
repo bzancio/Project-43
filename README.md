@@ -40,6 +40,8 @@ Este repositorio **no es una guía paso a paso**.
 Es mi espacio personal de preparación y almacenamiento.  
 A medida que avance en la piscina de 42, lo iré completando con **más bloques, explicaciones y mejoras**.
 
+<h2 align="center">🔹 <strong>Como dijo un sabio: RTFM</strong></h2>
+
 <p align="center">
   <img src="./assets/mem1.png" width="350" alt="Moulinette meme" />
 </p>
@@ -51,6 +53,3 @@ A medida que avance en la piscina de 42, lo iré completando con **más bloques,
 Si quieres compartir ideas o comentar ejercicios, me puedes encontrar en 42 o por correo: **bzancio@gmail.com**
 
 ---
-
-<h2 align="center">🔹 <strong>Como dijo un sabio: RTFM</strong></h2>
-
