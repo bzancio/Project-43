@@ -7,8 +7,6 @@ Ya había estado antes, pero este proyecto es **mi preparación previa al segund
 Aquí recopilo todo mi bagaje antes de empezar oficialmente otra vez.  
 En solo **11 días** he repasado lo que he podido, así que los bloques y ejercicios que hay son los que me ha dado tiempo a completar antes de volver a lanzarme.
 
-![Moulinette meme](./assets/mem1.jpg)
-
 En el futuro, iré añadiendo **explicaciones detalladas** y los **nuevos bloques** que vaya resolviendo allí.
 
 ---
@@ -43,5 +41,6 @@ Si quieres compartir ideas o comentar ejercicios, me puedes encontrar en 42 o po
 
 ---
 
-🔹 **Como dijo un sabio :No te fies de un**
+🔹 **Como dijo un sabio: RTFM**
 
+![Moulinette meme](./assets/mem1.png)
