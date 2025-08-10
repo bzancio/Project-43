@@ -1,0 +1,2 @@
+echo "ls -l | awk 'NR % 2 == 1'" > skip.sh
+chmod ugo+x skip.sh

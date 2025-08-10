@@ -1,0 +1,2 @@
+echo "find . \( -type f -o -type d \) | wc -l" > count_files.sh
+chmod ugo+x count_files.sh
