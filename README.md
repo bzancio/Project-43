@@ -10,10 +10,6 @@ Aquí recopilo todo mi bagaje antes de empezar oficialmente otra vez.
 
 En solo **11 días** he repasado lo que he podido, así que los bloques y ejercicios que hay son los que me ha dado tiempo a completar antes de volver a lanzarme.
 
-<p align="center">
-  <img src="./assets/mem1.png" width="350" alt="Moulinette meme" />
-</p>
-
 ---
 
 ## 📚 Contenido del repositorio
@@ -43,6 +39,10 @@ En solo **11 días** he repasado lo que he podido, así que los bloques y ejerci
 Este repositorio **no es una guía paso a paso**.  
 Es mi espacio personal de preparación y almacenamiento.  
 A medida que avance en la piscina de 42, lo iré completando con **más bloques, explicaciones y mejoras**.
+
+<p align="center">
+  <img src="./assets/mem1.png" width="350" alt="Moulinette meme" />
+</p>
 
 ---
 
