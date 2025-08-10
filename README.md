@@ -1,6 +1,8 @@
 # 🚀 Project-43: Mi aventura (segunda vuelta) en 42 Madrid
 
-![42 Logo](./assets/42-Madrid.jpg)
+<p align="center">
+  <img src="./assets/42-Madrid.jpg" width="200" />
+</p>
 
 Este repositorio no es mi primera toma de contacto con 42 Madrid.  
 Ya había estado antes, pero este proyecto es **mi preparación previa al segundo intento**.  
@@ -41,6 +43,7 @@ Si quieres compartir ideas o comentar ejercicios, me puedes encontrar en 42 o po
 
 ---
 
-🔹 **Como dijo un sabio: RTFM**
+<h2>🔹 <strong>Como dijo un sabio: RTFM</strong></h2>
 
-![Moulinette meme](./assets/mem1.png)
+<img src="./assets/mem1.png" width="300" />
+
