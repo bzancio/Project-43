@@ -1,7 +1,7 @@
 # 🚀 Project-43: Mi aventura (segunda vuelta) en 42 Madrid
 
 <p align="center">
-  <img src="./assets/42-Madrid.jpg" width="200" />
+  <img src="./assets/42-Madrid.jpg" width="400" />
 </p>
 
 Este repositorio no es mi primera toma de contacto con 42 Madrid.  
@@ -43,7 +43,9 @@ Si quieres compartir ideas o comentar ejercicios, me puedes encontrar en 42 o po
 
 ---
 
-<h2>🔹 <strong>Como dijo un sabio: RTFM</strong></h2>
-
-<img src="./assets/mem1.png" width="300" />
+<p align="center">
+  <h2>🔹 <strong>Como dijo un sabio: RTFM</strong></h2>
+  
+  <img src="./assets/mem1.png" width="350" />
+</p>
 
