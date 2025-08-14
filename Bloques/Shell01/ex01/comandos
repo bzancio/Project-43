@@ -1,2 +1,2 @@
-echo "groups $FT_USER | tr ' ' ',' | tr -d '\n'" > print_groups.sh
+echo "id -Gn $FT_USER | tr ' ' ',' | tr -d '\n'" > print_groups.sh
 chmod ugo+x print_groups.sh
