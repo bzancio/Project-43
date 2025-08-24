@@ -6,7 +6,7 @@
 /*   By: ibuil <ibuil@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/23 04:18:46 by ibuil             #+#    #+#             */
-/*   Updated: 2025/08/23 04:42:08 by ibuil            ###   ########.fr       */
+/*   Updated: 2025/08/24 23:09:39 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,14 @@ int	ft_valid_argc(int argc)
 
 int	ft_valid_size(int digit_count)
 {
-	if (ft_get_n_from_digit_count(digit_count))
-		return (1);
-	return (0);
+	int	n;
+
+	n = digit_count / 4;
+	if (n * 4 != digit_count)
+		return (0);
+	if (n < 4 || n > 9)
+		return (0);
+	return (1);
 }
 
 int	ft_valid_format(char *str)

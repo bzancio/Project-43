@@ -1,27 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   extract.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ibuil <ibuil@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/19 17:53:57 by ibuil             #+#    #+#             */
-/*   Updated: 2025/08/19 17:55:57 by ibuil            ###   ########.fr       */
+/*   Created: 2025/08/24 17:33:25 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/24 22:41:18 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+#include <stdlib.h>
+
+int	ft_strlen(char *str);
+int	ft_get_n_from_digit_count(int n);
+
+int	*ft_extract_values(char *str, int *size)
 {
 	int	i;
+	int	j;
+	int	n;
+	int	*values;
 
 	i = 0;
-	while (s1[i] && s2[i])
+	j = 0;
+	*size = ft_get_n_from_digit_count((ft_strlen(str) + 1) / 2);
+	n = *size;
+	values = malloc(sizeof(int) * (n * 4));
+	if (!values)
+		return (NULL);
+	while (str[i])
 	{
-		if (s1[i] != s2[i])
+		if (str[i] >= '0' && str[i] <= '9')
 		{
-			break ;
+			values[j] = str[i] - '0';
+			j++;
 		}
 		i++;
 	}
-	return (s1[i] - s2[i]);
+	return (values);
 }
