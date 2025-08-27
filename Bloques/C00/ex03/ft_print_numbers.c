@@ -3,23 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bzancio <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ibuil <ibuil@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 17:12:30 by bzancio           #+#    #+#             */
-/*   Updated: 2025/08/01 17:30:17 by bzancio          ###   ########.fr       */
+/*   Created: 2025/08/13 15:10:02 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/14 19:06:36 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
 void	ft_print_numbers(void)
 {
-	char	numero;
+	char	c;
 
-	numero = '0';
-	while (numero <= '9')
+	c = '0';
+	while (c <= '9')
 	{
-		write(1, &numero, 1);
-		numero++;
+		ft_putchar(c);
+		c++;
 	}
 }

@@ -3,34 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bzancio <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ibuil <ibuil@student.42madrid.com>			+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 20:29:19 by bzancio           #+#    #+#             */
-/*   Updated: 2025/08/01 21:46:30 by bzancio          ###   ########.fr       */
+/*   Created: 2025/08/13 15:29:39 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/14 19:07:42 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_print_comb(void)
 {
-	char	numeros[3];
+	char	num[3];
 
-	numeros[0] = '0';
-	while (numeros[0] <= '7')
+	num[0] = '0';
+	while (num[0] <= '7')
 	{
-		numeros[1] = numeros[0] + 1;
-		while (numeros[1] <= '8')
+		num[1] = num[0] + 1;
+		while (num[1] <= '8')
 		{
-			numeros[2] = numeros[1] + 1;
-			while (numeros[2] <= '9')
+			num[2] = num[1] + 1;
+			while (num[2] <= '9')
 			{
-				write(1, numeros, 3);
-				if (numeros[0] != '7')
+				write(1, num, 3);
+				if (num[0] != '7')
+				{
 					write(1, ", ", 2);
-				numeros[2]++;
+				}
+				num[2]++;
 			}
-			numeros[1]++;
+			num[1]++;
 		}
-		numeros[0]++;
+		num[0]++;
 	}
 }

@@ -1,5 +1,0 @@
-touch testShell00
-touch -t 202506012342 testShell00
-echo 1234512345123451234512345123451234512345 > testShell00
-chmod 455 testShell00
-tar -cf testShell00.tar testShell00

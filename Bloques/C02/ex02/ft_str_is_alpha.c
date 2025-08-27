@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibuil-lo <ibuil-lo@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: ibuil <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/08 19:30:09 by ibuil-lo          #+#    #+#             */
-/*   Updated: 2025/08/08 20:28:40 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/14 23:39:03 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/14 23:45:59 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_str_is_alpha(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if ((str[i] < 'a' || str[i] > 'z') && (str[i] < 'A' || str[i] > 'B'))
+		if ((str[i] < 'a' || str[i] > 'z') && (str[i] < 'A' || str[i] > 'Z'))
 		{
 			return (0);
 		}

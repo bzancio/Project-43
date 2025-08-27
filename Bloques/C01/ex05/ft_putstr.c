@@ -3,23 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibuil-lo <ibuil-lo@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: ibuil <ibuil@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/02 18:47:56 by ibuil-lo          #+#    #+#             */
-/*   Updated: 2025/08/02 18:59:19 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/14 19:26:42 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/14 19:28:26 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putstr(char	*str)
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+void	ft_putstr(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
-		write(1, &str[i], 1);
+		ft_putchar(str[i]);
 		i++;
 	}
 }

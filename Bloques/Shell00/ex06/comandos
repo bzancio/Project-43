@@ -1,2 +1,0 @@
-echo "git ls-files --other --ignored --exclude-standard" > git_ignore.sh
-chmod ugo+x git_ignore.sh

@@ -3,21 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibuil-lo <ibuil-lo@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: ibuil <ibuil@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/02 19:05:36 by ibuil-lo          #+#    #+#             */
-/*   Updated: 2025/08/02 19:16:12 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/14 19:28:55 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/14 19:29:48 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
 		i++;
 	}

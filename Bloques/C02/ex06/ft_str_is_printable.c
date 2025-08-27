@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibuil-lo <ibuil-lo@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: ibuil <ibuil@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/08 20:03:25 by ibuil-lo          #+#    #+#             */
-/*   Updated: 2025/08/08 20:06:40 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/18 19:04:21 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/18 19:06:22 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_str_is_printable(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] < 32 || str[i] == 127)
+		if (str[i] < 32 || str[i] > 126)
 		{
 			return (0);
 		}

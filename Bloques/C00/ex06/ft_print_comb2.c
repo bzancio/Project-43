@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bzancio <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ibuil <ibuil@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 21:52:34 by bzancio           #+#    #+#             */
-/*   Updated: 2025/08/08 21:57:14 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/13 15:56:23 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/14 19:08:10 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_print_comb2(void)
 			toprint[3] = '0' + (num[1] / 10);
 			toprint[4] = '0' + (num[1] % 10);
 			write(1, &toprint, 5);
-			if (num[0] != 98 || num[1] != 99)
+			if (num[0] != 98)
 			{
 				write(1, ", ", 2);
 			}

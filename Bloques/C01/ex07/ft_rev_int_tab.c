@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibuil-lo <ibuil-lo@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: ibuil <ibuil@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/03 22:15:11 by ibuil-lo          #+#    #+#             */
-/*   Updated: 2025/08/03 22:32:17 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/14 19:31:33 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/14 19:36:55 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	ft_rev_int_tab(int *tab, int size)
 	while (i < size / 2)
 	{
 		temp = tab[i];
-		tab[i] = tab[size - 1 - i];
-		tab[size - 1 - i] = temp;
+		tab[i] = tab[size - i - 1];
+		tab[size - i - 1] = temp;
 		i++;
 	}
 }

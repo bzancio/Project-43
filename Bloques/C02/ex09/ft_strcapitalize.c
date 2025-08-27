@@ -3,32 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibuil-lo <ibuil-lo@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: ibuil <ibuil@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/08 20:32:20 by ibuil-lo          #+#    #+#             */
-/*   Updated: 2025/08/08 22:45:35 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/18 19:18:09 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/19 00:24:38 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	is_lowercase(char c)
+int	ft_is_lowercase(char c)
 {
-	if (c >= 'a' && c <= 'z')
+	if (c < 'a' || c > 'z')
 	{
-		return (1);
+		return (0);
 	}
-	return (0);
+	return (1);
 }
 
-int	is_uppercase(char c)
+int	ft_is_uppercase(char c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c < 'A' || c > 'Z')
 	{
-		return (1);
+		return (0);
 	}
-	return (0);
+	return (1);
 }
 
-int	is_alphanumeric(char c)
+int	ft_is_alphanum(char c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
@@ -45,13 +45,13 @@ int	is_alphanumeric(char c)
 	return (0);
 }
 
-int	is_start_of_word(int pos, char *str)
+int	ft_is_start_of_word(char *str, int pos)
 {
 	if (pos == 0)
 	{
 		return (1);
 	}
-	if (!is_alphanumeric(str[pos - 1]))
+	if (!ft_is_alphanum(str[pos - 1]))
 	{
 		return (1);
 	}
@@ -63,13 +63,13 @@ char	*ft_strcapitalize(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
-		if (is_start_of_word(i, str) && is_lowercase(str[i]))
+		if (ft_is_start_of_word(str, i) && ft_is_lowercase(str[i]))
 		{
 			str[i] -= 32;
 		}
-		else if (!is_start_of_word(i, str) && is_uppercase(str[i]))
+		else if (!ft_is_start_of_word(str, i) && ft_is_uppercase(str[i]))
 		{
 			str[i] += 32;
 		}

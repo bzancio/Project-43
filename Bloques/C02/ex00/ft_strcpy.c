@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibuil-lo <ibuil-lo@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: ibuil <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/02 19:25:08 by ibuil-lo          #+#    #+#             */
-/*   Updated: 2025/08/02 19:48:05 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/14 20:58:55 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/14 21:02:09 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	int	cont;
+	int	i;
 
-	cont = 0;
-	while (src[cont])
+	i = 0;
+	while (src[i])
 	{
-		dest[cont] = src[cont];
-		cont++;
+		dest[i] = src[i];
+		i++;
 	}
-	dest[cont] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }

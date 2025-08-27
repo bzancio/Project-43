@@ -1,2 +1,0 @@
-echo "find . -type f -name '*.sh' -exec basename {} .sh \;" > find_sh.sh
-chmod ugo+rwx find_sh.sh

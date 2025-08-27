@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibuil-lo <ibuil-lo@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: ibuil <ibuil@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/03 22:33:20 by ibuil-lo          #+#    #+#             */
-/*   Updated: 2025/08/03 23:20:57 by ibuil-lo         ###   ########.fr       */
+/*   Created: 2025/08/14 19:37:48 by ibuil             #+#    #+#             */
+/*   Updated: 2025/08/14 20:18:12 by ibuil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_sort_int_tab(int *tab, int size)
 {
-	int	temp;
-	int	i;
 	int	sorted;
+	int	i;
+	int	temp;
 
 	sorted = 0;
 	while (!sorted)
@@ -32,5 +32,6 @@ void	ft_sort_int_tab(int *tab, int size)
 			}
 			i++;
 		}
+		i = 0;
 	}
 }
